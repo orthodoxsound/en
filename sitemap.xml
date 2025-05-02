@@ -1,18 +1,16 @@
+<!-- public/sitemap.xml -->
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://orthodoxsound.com/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://orthodoxsound.github.io/en/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://orthodoxsound.com/index-ar.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://orthodoxsound.github.io/en/index-ar.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://orthodoxsound.com/404.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
+    <loc>https://orthodoxsound.github.io/en/404.html</loc>
+    <priority>0.3</priority>
   </url>
 </urlset>
