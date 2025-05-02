@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://orthodoxsound.com/sitemap.xml
+Sitemap: https://orthodoxsound.github.io/en/public/sitemap.xml
