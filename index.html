@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="public/logo.png" />
+
+  <title>Orthodox Sound</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Orthodox Sound shares the unchanging Orthodox faith through the Holy Fathers, homilies, Byzantine hymns, and the lives of the saints.">
+  <meta name="keywords" content="Orthodox, Faith, Byzantine, Holy Fathers, Homilies, Saints, Orthodox Church, Orthodox Sound">
+  <meta name="author" content="Orthodox Sound">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Orthodox Sound" />
+  <meta property="og:description" content="Proclaiming the unchanging Orthodox faith through the Holy Fathers and sacred traditions." />
+  <meta property="og:image" content="https://yourdomain.com/thumbnail.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">Orthodox Sound</h1>
+      <a href="index-ar.html" class="lang-switch">Ar</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#social">OS Accounts</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="public/i1.jpg" alt="Hero Image" class="hero-image">
+    <div class="hero-text">
+      Do not set your eyes on earthly things,<br>
+      but turn them toward Heaven, where there is no corruption or decay.
+    </div>
+  </section>  
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>About Orthodox Sound</h2>
+      <p>
+        Orthodox Sound is dedicated to proclaiming the timeless truth of the Orthodox Faith.
+        Through the words of the Holy Fathers, traditional homilies, Byzantine hymns, and the lives of the Saints.
+        We aim to awaken souls to the beauty of the unchanging Church. Rooted in the sacred tradition and patristic heritage,
+        we strive to be a voice that echoes the Apostolic message in a modern world clouded by noise and novelty.
+        By preserving and sharing the spiritual treasures of Orthodoxy, we seek not only to inform minds,
+        but to inspire repentance, deepen prayer, and stir a longing for the Kingdom of God.
+      </p>
+    </div>
+  </section>
+  
+  <section id="social" class="social-section">
+    <div class="social-container">
+      <h2>Follow Us</h2>
+      <div class="social-links">
+        <a href="https://whatsapp.com/channel/0029VbAYWAX8aKvBWy8VsC1s" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/orthodox.sound" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@orthodox.sound" target="_blank">TikTok</a>
+        <a href="https://youtube.com/@orthodoxsound451" target="_blank">YouTube</a>
+        <a href="https://x.com/orthodoxsound" target="_blank">X (Twitter)</a>
+        <a href="https://www.facebook.com/eliobarhoun.lebanon" target="_blank">Facebook</a>
+        <a href="https://discord.gg/JhB8cd9FDy" target="_blank">Discord</a>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>☦ We must remain Orthodox forever ☦</p>
+      <p style="color: aliceblue;">&copy; 2025 Orthodox Sound. All rights reserved.</p>
+    </div>
+  </footer>    
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = navLinks.querySelectorAll('a');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    navItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

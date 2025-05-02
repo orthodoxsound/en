@@ -1,0 +1,219 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #fff;
+  }
+  
+  .main-header {
+    background-color: #59191F;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #FFD700;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: #FFD700;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  
+  .lang-switch {
+    background-color: transparent;
+    border: none;
+    color: #FFD700;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .lang-switch:hover {
+    color: #ffffff;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #FFD700;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: #59191F;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      border: 2px solid #FFD700;
+      border-radius: 10px;
+      z-index: 999;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links a,
+    .lang-switch {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    .container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 89vh;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #59191F;
+    color: #FFD700;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 2;
+    animation: floatText 4s ease-in-out infinite;
+    max-width: 90%;
+  }
+  
+  @keyframes floatText {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+    100% { transform: translateX(-50%) translateY(0); }
+  }
+  
+  .about-section {
+    background-color: #fff;
+    color: #59191F;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .about-container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .about-section h2 {
+    color: #59191F;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  .social-section {
+    background-color: #59191F;
+    color: #FFD700;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .social-container {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .social-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    background-color: #FFD700;
+    color: #59191F;
+  }
+  .main-footer {
+    background-color: #59191F;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95rem;
+    border-top: 1px solid #FFD700;
+  }
+  
+  .footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+    

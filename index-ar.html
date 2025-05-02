@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="public/logo.png" />
+  <title>صوت أرثوذكسي</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="الصوت الأرثوذكسي يشارك الإيمان الأرثوذكسي الثابت من خلال الآباء القديسين، العظات، الترانيم البيزنطية، وسير القديسين.">
+  <meta name="keywords" content="أرثوذكسي، إيمان، بيزنطي، آباء قديسون، عظات، قديسين، الكنيسة الأرثوذكسية، الصوت الأرثوذكسي">
+  <meta name="author" content="Orthodox Sound">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="الصوت الأرثوذكسي" />
+  <meta property="og:description" content="نعلن الإيمان الأرثوذكسي الثابت من خلال الآباء القديسين والتقليد المقدس." />
+  <meta property="og:image" content="https://yourdomain.com/thumbnail.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Override nav for Arabic layout */
+    .nav-links.active {
+      left: 0;
+      right: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">صوت أرثوذكسي</h1>
+      <a href="index.html" class="lang-switch">En</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">حول صوت أرثوذكسي</a>
+        <a href="#social">حسابات صوت أرثوذكسي</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="public/i1.jpg" alt="صورة رئيسية" class="hero-image">
+    <div class="hero-text">
+      لا تُثبت عينيك على الأمور الأرضية،<br>
+      بل ارفعهما نحو السماء، حيث لا فساد ولا فناء.
+    </div>
+  </section>  
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>حول صوت أرثوذكسي</h2>
+      <p>
+        الصوت الأرثوذكسي مكرّس لإعلان الحقيقة الخالدة للإيمان الأرثوذكسي.
+        من خلال كلمات الآباء القديسين، والعظات التقليدية، والترانيم البيزنطية، وسير القديسين.
+        نهدف إلى إيقاظ النفوس على جمال الكنيسة غير المتغيرة. متجذرون في التقليد المقدس والتراث الآبائي،
+        نسعى لنكون صوتًا يردد الرسالة الرسولية في عالم حديث تملؤه الضوضاء والابتكار.
+        من خلال الحفاظ على الكنوز الروحية للأرثوذكسية ومشاركتها، نرغب ليس فقط في تنوير العقول،
+        بل في إلهام التوبة، وتعميق الصلاة، وإثارة الشوق إلى ملكوت الله.
+      </p>
+    </div>
+  </section>
+
+  <section id="social" class="social-section">
+    <div class="social-container">
+      <h2>تابعونا</h2>
+      <div class="social-links">
+        <a href="https://whatsapp.com/channel/0029VbAYWAX8aKvBWy8VsC1s" target="_blank">واتساب</a>
+        <a href="https://www.instagram.com/orthodox.sound" target="_blank">إنستغرام</a>
+        <a href="https://www.tiktok.com/@orthodox.sound" target="_blank">تيك توك</a>
+        <a href="https://youtube.com/@orthodoxsound451" target="_blank">يوتيوب</a>
+        <a href="https://x.com/orthodoxsound" target="_blank">تويتر (X)</a>
+        <a href="https://www.facebook.com/eliobarhoun.lebanon" target="_blank">فيسبوك</a>
+        <a href="https://discord.gg/JhB8cd9FDy" target="_blank">ديسكورد</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p>☦ يجب أن نبقى أرثوذكسيين إلى الأبد ☦</p>
+      <p style="color: aliceblue;">&copy; 2025 صوت أرثوذكسي. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>    
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const navItems = navLinks.querySelectorAll('a');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    navItems.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
